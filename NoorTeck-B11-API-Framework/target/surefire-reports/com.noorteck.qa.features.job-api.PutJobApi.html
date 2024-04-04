@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>com.noorteck.qa.features.job-api.PutJobApi</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">2</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2024-03-25 10:40:10 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1.1:36]">[1.1:36] Verify User able to update existing Job </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[1.1:41]">[1.1:41] Verify User able to update existing Job </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">com/noorteck/qa/features/job-api/PutJobApi.feature</span><span class="feature-description">PUT Api</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1.1:36]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">PutREQ</a><a class="badge badge-primary" href="karate-tags.html">scrum</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario Outline: [1.1:36]</span><span class="scenario-name">Verify User able to update existing Job </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 2312</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1.1:36]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* def filePath = read(file_path)</div>
+                        </div>
+                        <div class="time-cell passed">26</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">22:40:07.577 karate.env value: sit</div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* def testDataFilePath = filePath.JobTestData</div>
+                        </div>
+                        <div class="time-cell passed">16</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="3">
+                            <div class="step-ref bg-step">3</div>
+                            <div class="step-cell passed">* def hrServerData = read(hrApiServerData)</div>
+                        </div>
+                        <div class="time-cell passed">31</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="4">
+                            <div class="step-ref bg-step">4</div>
+                            <div class="step-cell passed">* def baseURL =  env == 'scrum' ? hrServerData.baseScrumURL : hrServerData.baseSitURL</div>
+                        </div>
+                        <div class="time-cell passed">84</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="5">
+                            <div class="step-ref bg-step">5</div>
+                            <div class="step-cell passed">* def getHeaderInfo = env == 'scrum' ? filePath.Headers+'@scrum' : filePath.Headers+'@sit'</div>
+                        </div>
+                        <div class="time-cell passed">34</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="6">
+                            <div class="step-ref bg-step">6</div>
+                            <div class="step-cell passed">* def setHeader = call read(getHeaderInfo)</div>
+                        </div>
+                        <div class="time-cell passed">1816</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="6.1">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">com/noorteck/qa/helpers/Headers.feature</div>
+                        </div>
+                        <div class="time-cell passed">1743</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="7">
+                            <div class="step-ref bg-step">7</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def filePath = read(file_path)</div>
+                        </div>
+                        <div class="time-cell passed">10</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="8">
+                            <div class="step-ref bg-step">8</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def getTokenData = call read(filePath.GenerateAuthToken+'@token')</div>
+                        </div>
+                        <div class="time-cell passed">1720</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="8.1">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">com/noorteck/qa/helpers/GenerateAuthToken.feature</div>
+                        </div>
+                        <div class="time-cell passed">1681</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="9">
+                            <div class="step-ref bg-step">9</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def hrServerData = read(hrApiServerData)</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="10">
+                            <div class="step-ref bg-step">10</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def baseURL =  hrServerData.baseSitURL</div>
+                        </div>
+                        <div class="time-cell passed">16</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="11">
+                            <div class="step-ref bg-step">11</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def apiURI = hrServerData.authSignIn</div>
+                        </div>
+                        <div class="time-cell passed">9</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="12">
+                            <div class="step-ref bg-step">12</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def endpoint = baseURL+apiURI</div>
+                        </div>
+                        <div class="time-cell passed">12</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="13">
+                            <div class="step-ref bg-step">13</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* print endpoint</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="13">22:40:08.116 [print] https://hr-sit.noortecktraining.com/auth/sign-in</div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="14">
+                            <div class="step-ref bg-step">14</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def request_body =</div>
+                        </div>
+                        <div class="time-cell passed">17</div>
+                    </div>
+                    <div class="preformatted" data-parent="14">{
+"username": '#(username)',
+"password": '#(password)'
+}</div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="15">
+                            <div class="step-ref bg-step">15</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given headers {Accept: 'application/json'}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="16">
+                            <div class="step-ref bg-step">16</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And url endpoint</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="17">
+                            <div class="step-ref bg-step">17</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And request request_body</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="18">
+                            <div class="step-ref bg-step">18</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method POST</div>
+                        </div>
+                        <div class="time-cell passed">1606</div>
+                    </div>
+                    <div class="preformatted" data-parent="18">22:40:08.809 request:
+1 &gt; POST https://hr-sit.noortecktraining.com/auth/sign-in
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 46
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: hr-sit.noortecktraining.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.21)
+{"username":"framework","password":"12345678"}
+
+22:40:09.740 response time in milliseconds: 927.59
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Aceess-Control-Allow-Headers: Content-Type, Authorization
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 226
+1 &lt; Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Cross-Origin-Embedder-Policy: require-corp
+1 &lt; Cross-Origin-Opener-Policy: same-origin
+1 &lt; Cross-Origin-Resource-Policy: same-origin
+1 &lt; Date: Tue, 26 Mar 2024 02:40:09 GMT
+1 &lt; ETag: W/"e2-0D+qInVWxOACvaeSdfnmtxIHkMI"
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Server: openresty
+1 &lt; Strict-Transport-Security: [max-age=15552000; includeSubDomains, max-age=63072000; preload]
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Served-By: hr-sit.noortecktraining.com
+1 &lt; X-XSS-Protection: 0
+{"message":"Authentication successfull","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE4LCJ1c2VybmFtZSI6ImZyYW1ld29yayIsImlhdCI6MTcxMTQyMDgwOSwiZXhwIjoxNzExNTA3MjA5fQ.4d5WFyfg_tykcR7ET1kNnvZHnPr0va2nnT-MMqub2uw"}</div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="19">
+                            <div class="step-ref bg-step">19</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* print response</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="19">22:40:09.742 [print] {
+  "message": "Authentication successfull",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE4LCJ1c2VybmFtZSI6ImZyYW1ld29yayIsImlhdCI6MTcxMTQyMDgwOSwiZXhwIjoxNzExNTA3MjA5fQ.4d5WFyfg_tykcR7ET1kNnvZHnPr0va2nnT-MMqub2uw"
+}</div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="20">
+                            <div class="step-ref bg-step">20</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def token = 'Bearer ' + response.token</div>
+                        </div>
+                        <div class="time-cell passed">11</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="21">
+                            <div class="step-ref bg-step">21</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def setToken = getTokenData.token</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="22">
+                            <div class="step-ref bg-step">22</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* print setToken</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="22">22:40:09.760 [print] Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE4LCJ1c2VybmFtZSI6ImZyYW1ld29yayIsImlhdCI6MTcxMTQyMDgwOSwiZXhwIjoxNzExNTA3MjA5fQ.4d5WFyfg_tykcR7ET1kNnvZHnPr0va2nnT-MMqub2uw</div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="23">
+                            <div class="step-ref bg-step">23</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def HEADER = {Content-Type: 'application/json', Accept: 'application/json', Authorization: '#(setToken)'}</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:36]bg">
+                        <div class="step-container" id="24">
+                            <div class="step-ref bg-step">24</div>
+                            <div class="step-cell passed">* configure headers = setHeader.HEADER</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="25">
+                            <div class="step-ref passed">25</div>
+                            <div class="step-cell passed">* def apiURI = hrServerData.Job.PutExistingJob</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="26">
+                            <div class="step-ref passed">26</div>
+                            <div class="step-cell passed">* print apiURI</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="26">22:40:09.778 [print] /job/update</div>
+                    <div class="step-row">
+                        <div class="step-container" id="27">
+                            <div class="step-ref passed">27</div>
+                            <div class="step-cell passed">* def endpoint = baseURL+apiURI</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="28">
+                            <div class="step-ref passed">28</div>
+                            <div class="step-cell passed">* def generateTestData = call read(filePath.GenerateTestData+'@updateJob'){fileName:'#(testDataFilePath)', region: 'scrum', index: '0', jobId: '"doctor"'}</div>
+                        </div>
+                        <div class="time-cell passed">34</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="29">
+                            <div class="step-ref passed">29</div>
+                            <div class="step-cell passed">* def data = read('classpath:'+filePath.JobTestData)</div>
+                        </div>
+                        <div class="time-cell passed">11</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="30">
+                            <div class="step-ref passed">30</div>
+                            <div class="step-cell passed">* print data</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="30">22:40:09.826 [print] {
+  "scrum": [
+    {
+      "jobId": "firefighter",
+      "maxSalary": 98037,
+      "jobTitle": "Internet",
+      "minSalary": 2832
+    }
+  ],
+  "sit": [
+    {
+      "jobId": "economist",
+      "maxSalary": 71981,
+      "jobTitle": "Research",
+      "minSalary": 4415
+    }
+  ]
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="31">
+                            <div class="step-ref passed">31</div>
+                            <div class="step-cell passed">* def request_body = read('classpath:'+ filePath.JobPutRBody)</div>
+                        </div>
+                        <div class="time-cell passed">13</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="32">
+                            <div class="step-ref passed">32</div>
+                            <div class="step-cell passed">* print request_body</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="32">22:40:09.840 [print] {
+  "jobId": "",
+  "jobTitle": "",
+  "minSalary": 0,
+  "maxSalary": 0
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="33">
+                            <div class="step-ref passed">33</div>
+                            <div class="step-cell passed">* set request_body.jobId = "doctor"</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="34">
+                            <div class="step-ref passed">34</div>
+                            <div class="step-cell passed">* set request_body.jobTitle = data.scrum[0].jobTitle</div>
+                        </div>
+                        <div class="time-cell passed">36</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="35">
+                            <div class="step-ref passed">35</div>
+                            <div class="step-cell passed">* set request_body.minSalary = data.scrum[0].minSalary</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="36">
+                            <div class="step-ref passed">36</div>
+                            <div class="step-cell passed">* set request_body.maxSalary = data.scrum[0].maxSalary</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="37">
+                            <div class="step-ref passed">37</div>
+                            <div class="step-cell passed">* print request_body</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="37">22:40:09.898 [print] {
+  "jobId": "doctor",
+  "jobTitle": "Internet",
+  "minSalary": 2832,
+  "maxSalary": 98037
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="38">
+                            <div class="step-ref passed">38</div>
+                            <div class="step-cell passed">Given url endpoint</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="39">
+                            <div class="step-ref passed">39</div>
+                            <div class="step-cell passed">And request request_body</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="40">
+                            <div class="step-ref passed">40</div>
+                            <div class="step-cell passed">When method PUT</div>
+                        </div>
+                        <div class="time-cell passed">179</div>
+                    </div>
+                    <div class="preformatted" data-parent="40">22:40:09.906 request:
+1 &gt; PUT https://hr-sit.noortecktraining.com/job/update
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE4LCJ1c2VybmFtZSI6ImZyYW1ld29yayIsImlhdCI6MTcxMTQyMDgwOSwiZXhwIjoxNzExNTA3MjA5fQ.4d5WFyfg_tykcR7ET1kNnvZHnPr0va2nnT-MMqub2uw
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 75
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: hr-sit.noortecktraining.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.21)
+{"jobId":"doctor","jobTitle":"Internet","minSalary":2832,"maxSalary":98037}
+
+22:40:10.077 response time in milliseconds: 170.54
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Aceess-Control-Allow-Headers: Content-Type, Authorization
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 34
+1 &lt; Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Cross-Origin-Embedder-Policy: require-corp
+1 &lt; Cross-Origin-Opener-Policy: same-origin
+1 &lt; Cross-Origin-Resource-Policy: same-origin
+1 &lt; Date: Tue, 26 Mar 2024 02:40:10 GMT
+1 &lt; ETag: W/"22-KN8hwUZi4URapceCwFjArsrZGWc"
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Server: openresty
+1 &lt; Strict-Transport-Security: [max-age=15552000; includeSubDomains, max-age=63072000; preload]
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Served-By: hr-sit.noortecktraining.com
+1 &lt; X-XSS-Protection: 0
+{"message":"Successfully updated"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="41">
+                            <div class="step-ref passed">41</div>
+                            <div class="step-cell passed">* print response</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="41">22:40:10.078 [print] {
+  "message": "Successfully updated"
+}</div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1.1:41]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">PutREQ</a><a class="badge badge-primary" href="karate-tags.html">sit</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario Outline: [1.1:41]</span><span class="scenario-name">Verify User able to update existing Job </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 826</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1.1:41]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="42">
+                            <div class="step-ref bg-step">42</div>
+                            <div class="step-cell passed">* def filePath = read(file_path)</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="preformatted" data-parent="42">22:40:10.087 karate.env value: sit</div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="43">
+                            <div class="step-ref bg-step">43</div>
+                            <div class="step-cell passed">* def testDataFilePath = filePath.JobTestData</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="44">
+                            <div class="step-ref bg-step">44</div>
+                            <div class="step-cell passed">* def hrServerData = read(hrApiServerData)</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="45">
+                            <div class="step-ref bg-step">45</div>
+                            <div class="step-cell passed">* def baseURL =  env == 'scrum' ? hrServerData.baseScrumURL : hrServerData.baseSitURL</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="46">
+                            <div class="step-ref bg-step">46</div>
+                            <div class="step-cell passed">* def getHeaderInfo = env == 'scrum' ? filePath.Headers+'@scrum' : filePath.Headers+'@sit'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="47">
+                            <div class="step-ref bg-step">47</div>
+                            <div class="step-cell passed">* def setHeader = call read(getHeaderInfo)</div>
+                        </div>
+                        <div class="time-cell passed">636</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="47.1">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">com/noorteck/qa/helpers/Headers.feature</div>
+                        </div>
+                        <div class="time-cell passed">623</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="48">
+                            <div class="step-ref bg-step">48</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def filePath = read(file_path)</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="49">
+                            <div class="step-ref bg-step">49</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def getTokenData = call read(filePath.GenerateAuthToken+'@token')</div>
+                        </div>
+                        <div class="time-cell passed">616</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="49.1">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">com/noorteck/qa/helpers/GenerateAuthToken.feature</div>
+                        </div>
+                        <div class="time-cell passed">602</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="50">
+                            <div class="step-ref bg-step">50</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def hrServerData = read(hrApiServerData)</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="51">
+                            <div class="step-ref bg-step">51</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def baseURL =  hrServerData.baseSitURL</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="52">
+                            <div class="step-ref bg-step">52</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def apiURI = hrServerData.authSignIn</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="53">
+                            <div class="step-ref bg-step">53</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def endpoint = baseURL+apiURI</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="54">
+                            <div class="step-ref bg-step">54</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* print endpoint</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="54">22:40:10.139 [print] https://hr-sit.noortecktraining.com/auth/sign-in</div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="55">
+                            <div class="step-ref bg-step">55</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def request_body =</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="preformatted" data-parent="55">{
+"username": '#(username)',
+"password": '#(password)'
+}</div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="56">
+                            <div class="step-ref bg-step">56</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given headers {Accept: 'application/json'}</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="57">
+                            <div class="step-ref bg-step">57</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And url endpoint</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="58">
+                            <div class="step-ref bg-step">58</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And request request_body</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="59">
+                            <div class="step-ref bg-step">59</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method POST</div>
+                        </div>
+                        <div class="time-cell passed">587</div>
+                    </div>
+                    <div class="preformatted" data-parent="59">22:40:10.146 request:
+1 &gt; POST https://hr-sit.noortecktraining.com/auth/sign-in
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 46
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: hr-sit.noortecktraining.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.21)
+{"username":"framework","password":"12345678"}
+
+22:40:10.729 response time in milliseconds: 582.90
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Aceess-Control-Allow-Headers: Content-Type, Authorization
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 226
+1 &lt; Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Cross-Origin-Embedder-Policy: require-corp
+1 &lt; Cross-Origin-Opener-Policy: same-origin
+1 &lt; Cross-Origin-Resource-Policy: same-origin
+1 &lt; Date: Tue, 26 Mar 2024 02:40:10 GMT
+1 &lt; ETag: W/"e2-0BKfjwnhm6wHy0RlhARt0yb/n4E"
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Server: openresty
+1 &lt; Strict-Transport-Security: [max-age=15552000; includeSubDomains, max-age=63072000; preload]
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Served-By: hr-sit.noortecktraining.com
+1 &lt; X-XSS-Protection: 0
+{"message":"Authentication successfull","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE4LCJ1c2VybmFtZSI6ImZyYW1ld29yayIsImlhdCI6MTcxMTQyMDgxMCwiZXhwIjoxNzExNTA3MjEwfQ.HCg2RZYRqGDLcbGWtauR6sBVqgjjlS7QOT6_k7wP5wo"}</div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="60">
+                            <div class="step-ref bg-step">60</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* print response</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="60">22:40:10.730 [print] {
+  "message": "Authentication successfull",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE4LCJ1c2VybmFtZSI6ImZyYW1ld29yayIsImlhdCI6MTcxMTQyMDgxMCwiZXhwIjoxNzExNTA3MjEwfQ.HCg2RZYRqGDLcbGWtauR6sBVqgjjlS7QOT6_k7wP5wo"
+}</div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="61">
+                            <div class="step-ref bg-step">61</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def token = 'Bearer ' + response.token</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="62">
+                            <div class="step-ref bg-step">62</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def setToken = getTokenData.token</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="63">
+                            <div class="step-ref bg-step">63</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* print setToken</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="63">22:40:10.733 [print] Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE4LCJ1c2VybmFtZSI6ImZyYW1ld29yayIsImlhdCI6MTcxMTQyMDgxMCwiZXhwIjoxNzExNTA3MjEwfQ.HCg2RZYRqGDLcbGWtauR6sBVqgjjlS7QOT6_k7wP5wo</div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="64">
+                            <div class="step-ref bg-step">64</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def HEADER = {Content-Type: 'application/json', Accept: 'application/json', Authorization: '#(setToken)'}</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:41]bg">
+                        <div class="step-container" id="65">
+                            <div class="step-ref bg-step">65</div>
+                            <div class="step-cell passed">* configure headers = setHeader.HEADER</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="66">
+                            <div class="step-ref passed">66</div>
+                            <div class="step-cell passed">* def apiURI = hrServerData.Job.PutExistingJob</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="67">
+                            <div class="step-ref passed">67</div>
+                            <div class="step-cell passed">* print apiURI</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="67">22:40:10.735 [print] /job/update</div>
+                    <div class="step-row">
+                        <div class="step-container" id="68">
+                            <div class="step-ref passed">68</div>
+                            <div class="step-cell passed">* def endpoint = baseURL+apiURI</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="69">
+                            <div class="step-ref passed">69</div>
+                            <div class="step-cell passed">* def generateTestData = call read(filePath.GenerateTestData+'@updateJob'){fileName:'#(testDataFilePath)', region: 'sit', index: '0', jobId: '"doctor"'}</div>
+                        </div>
+                        <div class="time-cell passed">11</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="70">
+                            <div class="step-ref passed">70</div>
+                            <div class="step-cell passed">* def data = read('classpath:'+filePath.JobTestData)</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="71">
+                            <div class="step-ref passed">71</div>
+                            <div class="step-cell passed">* print data</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="71">22:40:10.753 [print] {
+  "scrum": [
+    {
+      "jobId": "firefighter",
+      "maxSalary": 98037,
+      "jobTitle": "Internet",
+      "minSalary": 2832
+    }
+  ],
+  "sit": [
+    {
+      "jobId": "economist",
+      "maxSalary": 71981,
+      "jobTitle": "Research",
+      "minSalary": 4415
+    }
+  ]
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="72">
+                            <div class="step-ref passed">72</div>
+                            <div class="step-cell passed">* def request_body = read('classpath:'+ filePath.JobPutRBody)</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="73">
+                            <div class="step-ref passed">73</div>
+                            <div class="step-cell passed">* print request_body</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="73">22:40:10.756 [print] {
+  "jobId": "",
+  "jobTitle": "",
+  "minSalary": 0,
+  "maxSalary": 0
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="74">
+                            <div class="step-ref passed">74</div>
+                            <div class="step-cell passed">* set request_body.jobId = "doctor"</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="75">
+                            <div class="step-ref passed">75</div>
+                            <div class="step-cell passed">* set request_body.jobTitle = data.sit[0].jobTitle</div>
+                        </div>
+                        <div class="time-cell passed">10</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="76">
+                            <div class="step-ref passed">76</div>
+                            <div class="step-cell passed">* set request_body.minSalary = data.sit[0].minSalary</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="77">
+                            <div class="step-ref passed">77</div>
+                            <div class="step-cell passed">* set request_body.maxSalary = data.sit[0].maxSalary</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="78">
+                            <div class="step-ref passed">78</div>
+                            <div class="step-cell passed">* print request_body</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="78">22:40:10.777 [print] {
+  "jobId": "doctor",
+  "jobTitle": "Research",
+  "minSalary": 4415,
+  "maxSalary": 71981
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="79">
+                            <div class="step-ref passed">79</div>
+                            <div class="step-cell passed">Given url endpoint</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="80">
+                            <div class="step-ref passed">80</div>
+                            <div class="step-cell passed">And request request_body</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="81">
+                            <div class="step-ref passed">81</div>
+                            <div class="step-cell passed">When method PUT</div>
+                        </div>
+                        <div class="time-cell passed">138</div>
+                    </div>
+                    <div class="preformatted" data-parent="81">22:40:10.780 request:
+1 &gt; PUT https://hr-sit.noortecktraining.com/job/update
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE4LCJ1c2VybmFtZSI6ImZyYW1ld29yayIsImlhdCI6MTcxMTQyMDgxMCwiZXhwIjoxNzExNTA3MjEwfQ.HCg2RZYRqGDLcbGWtauR6sBVqgjjlS7QOT6_k7wP5wo
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 75
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: hr-sit.noortecktraining.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.21)
+{"jobId":"doctor","jobTitle":"Research","minSalary":4415,"maxSalary":71981}
+
+22:40:10.914 response time in milliseconds: 134.11
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Aceess-Control-Allow-Headers: Content-Type, Authorization
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 34
+1 &lt; Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Cross-Origin-Embedder-Policy: require-corp
+1 &lt; Cross-Origin-Opener-Policy: same-origin
+1 &lt; Cross-Origin-Resource-Policy: same-origin
+1 &lt; Date: Tue, 26 Mar 2024 02:40:10 GMT
+1 &lt; ETag: W/"22-KN8hwUZi4URapceCwFjArsrZGWc"
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Server: openresty
+1 &lt; Strict-Transport-Security: [max-age=15552000; includeSubDomains, max-age=63072000; preload]
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Served-By: hr-sit.noortecktraining.com
+1 &lt; X-XSS-Protection: 0
+{"message":"Successfully updated"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="82">
+                            <div class="step-ref passed">82</div>
+                            <div class="step-cell passed">* print response</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="preformatted" data-parent="82">22:40:10.916 [print] {
+  "message": "Successfully updated"
+}</div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

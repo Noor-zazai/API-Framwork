@@ -1,0 +1,32 @@
+{
+	"scrum": [
+		{
+			"FirstName": "Gustavo",
+			"lastName": "Carter",
+			"jobId": "IT_PROG",
+			"hireDate": "01/01/2000",
+			"comissionPct": 0.6,
+			"phoneNumber": "1-434-431-3713",
+			"departmentId": 10,
+			"employeeId": 2335,
+			"managerId": 114,
+			"salary": 28977.87,
+			"email": "Gustavo@test.com"
+		}
+	],
+	"sit": [
+		{
+			"firstName": "Myles",
+			"lastName": "Denesik",
+			"jobId": "AD_VP",
+			"hireDate": "01/01/1970",
+			"comissionPct": 0.28,
+			"phoneNumber": "(569) 332-9576",
+			"departmentId": 10,
+			"employeeId": 155,
+			"managerId": 140,
+			"salary": 93466.01,
+			"email": "Myles@test.com"
+		}
+	]
+}

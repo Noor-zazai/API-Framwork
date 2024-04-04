@@ -1,0 +1,37 @@
+{
+
+	"Environment": "/src/test/resources/config/Environment.json",
+	"HRApiServerData": "classpath:/src/test/resources/config/HRApiServerData.json",
+	
+
+	"GenerateTestData": "classpath:com/noorteck/qa/helpers/GenerateTestData.feature",
+	"GenerateAuthToken": "classpath:com/noorteck/qa/helpers/GenerateAuthToken.feature",
+	"Headers": "classpath:com/noorteck/qa/helpers/Headers.feature",
+	
+	
+	
+	
+	
+	"EmpTestData": "./src/test/java/com/noorteck/qa/data/emp-api/EmpTestData.json",
+	"EmpPostRBody": "com/noorteck/qa/data/emp-api/EmpPostRBody.json",
+	"EmpPutRBody": "com/noorteck/qa/data/emp-api/EmpPutRBody.json",
+	"EmpPatchRBody": "com/noorteck/qa/data/emp-api/EmpPatchRBody.json",
+
+	
+	"JobTestData": "./src/test/java/com/noorteck/qa/data/job-api/JobTestData.json",
+	"JobPostRBody": "com/noorteck/qa/data/job-api/JobPostRBody.json",
+	"JobPutRBody": "com/noorteck/qa/data/job-api/JobPutRBody.json",
+	"JobPatchSalaryRBody": "com/noorteck/qa/data/job-api/JobPatchSalaryRBody.json",
+	"JobPatchTitleRBody": "com/noorteck/qa/data/job-api/JobPatchTitleRBody.json",
+	
+	
+	"DeptTestData":"./src/test/java/com/noorteck/qa/data/department-api/DeptTestData.json",
+	"DeptPostRBody":"com/noorteck/qa/data/department-api/DeptPostRBody.json",
+	"DeptPutRBody":"com/noorteck/qa/data/department-api/DeptPutRBody.json",
+	"DeptPatchNameRBody":"com/noorteck/qa/data/department-api/DeptPatchNameRBody.json",
+	"DeptPatchManagerRBody":"com/noorteck/qa/data/department-api/DeptPatchManagerRBody.json"
+	
+	
+	
+}
+

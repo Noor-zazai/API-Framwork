@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>com.noorteck.qa.features.emp-api.DemoGet</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">1</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2024-03-28 02:55:53 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1.1:30]">[1.1:30] Verify User able to retrieve all managers </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">com/noorteck/qa/features/emp-api/DemoGet.feature</span><span class="feature-description">HRAPI-Employeee Modulo SmokeTest Scenario</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1.1:30]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">jsonDemo</a><a class="badge badge-primary" href="karate-tags.html">sit</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario Outline: [1.1:30]</span><span class="scenario-name">Verify User able to retrieve all managers </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 1927</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1.1:30]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* def filePath = read(file_path)</div>
+                        </div>
+                        <div class="time-cell passed">41</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">14:55:51.459 karate.env value: sit</div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* print filePath</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="2">14:55:51.600 [print] {
+  "Environment": "/src/test/resources/config/Environment.json",
+  "HRApiServerData": "classpath:/src/test/resources/config/HRApiServerData.json",
+  "EmpTestData": "./src/test/java/com/noorteck/qa/data/emp-api/EmpTestData.json",
+  "EmpPostRBody": "com/noorteck/qa/data/emp-api/EmpPostRBody.json",
+  "EmpPutRBody": "com/noorteck/qa/data/emp-api/EmpPutRBody.json",
+  "EmpPatchRBody": "com/noorteck/qa/data/emp-api/EmpPatchRBody.json",
+  "JobTestData": "./src/test/java/com/noorteck/qa/data/job-api/JobTestData.json",
+  "JobPostRBody": "com/noorteck/qa/data/job-api/JobPostRBody.json",
+  "JobPutRBody": "com/noorteck/qa/data/job-api/JobPutRBody.json",
+  "JobPatchSalaryRBody": "com/noorteck/qa/data/job-api/JobPatchSalaryRBody.json",
+  "JobPatchTitleRBody": "com/noorteck/qa/data/job-api/JobPatchTitleRBody.json",
+  "GenerateTestData": "classpath:com/noorteck/qa/helpers/GenerateTestData.feature",
+  "GenerateAuthToken": "classpath:com/noorteck/qa/helpers/GenerateAuthToken.feature",
+  "Headers": "classpath:com/noorteck/qa/helpers/Headers.feature",
+  "SetEmpPostRBody": "classpath:com/noorteck/qa/features/emp-api/SetEmpPostRBody.feature"
+}</div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="3">
+                            <div class="step-ref bg-step">3</div>
+                            <div class="step-cell passed">* def testDataFilePath = filePath.EmpTestData</div>
+                        </div>
+                        <div class="time-cell passed">24</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="4">
+                            <div class="step-ref bg-step">4</div>
+                            <div class="step-cell passed">* def hrServerData = read(hrApiServerData)</div>
+                        </div>
+                        <div class="time-cell passed">15</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="5">
+                            <div class="step-ref bg-step">5</div>
+                            <div class="step-cell passed">* def baseURL =  env == 'scrum' ? hrServerData.baseScrumURL : hrServerData.baseSitURL</div>
+                        </div>
+                        <div class="time-cell passed">23</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="6">
+                            <div class="step-ref bg-step">6</div>
+                            <div class="step-cell passed">* def getHeaderInfo = env == 'scrum' ? filePath.Headers+'@scrum' : filePath.Headers+'@sit'</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="7">
+                            <div class="step-ref bg-step">7</div>
+                            <div class="step-cell passed">* print getHeaderInfo</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="7">14:55:51.671 [print] classpath:com/noorteck/qa/helpers/Headers.feature@sit</div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="8">
+                            <div class="step-ref bg-step">8</div>
+                            <div class="step-cell passed">* def setHeader = call read(getHeaderInfo)</div>
+                        </div>
+                        <div class="time-cell passed">1599</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="8.1">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">com/noorteck/qa/helpers/Headers.feature</div>
+                        </div>
+                        <div class="time-cell passed">1566</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="9">
+                            <div class="step-ref bg-step">9</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def filePath = read(file_path)</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="10">
+                            <div class="step-ref bg-step">10</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def getTokenData = call read(filePath.GenerateAuthToken+'@token')</div>
+                        </div>
+                        <div class="time-cell passed">1529</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="10.1">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">com/noorteck/qa/helpers/GenerateAuthToken.feature</div>
+                        </div>
+                        <div class="time-cell passed">1496</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="11">
+                            <div class="step-ref bg-step">11</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def hrServerData = read(hrApiServerData)</div>
+                        </div>
+                        <div class="time-cell passed">9</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="12">
+                            <div class="step-ref bg-step">12</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def baseURL =  hrServerData.baseSitURL</div>
+                        </div>
+                        <div class="time-cell passed">29</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="13">
+                            <div class="step-ref bg-step">13</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def apiURI = hrServerData.authSignIn</div>
+                        </div>
+                        <div class="time-cell passed">9</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="14">
+                            <div class="step-ref bg-step">14</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def endpoint = baseURL+apiURI</div>
+                        </div>
+                        <div class="time-cell passed">33</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="15">
+                            <div class="step-ref bg-step">15</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* print endpoint</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="15">14:55:51.823 [print] https://hr-sit.noortecktraining.com/auth/sign-in</div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="16">
+                            <div class="step-ref bg-step">16</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def request_body =</div>
+                        </div>
+                        <div class="time-cell passed">21</div>
+                    </div>
+                    <div class="preformatted" data-parent="16">{
+"username": '#(username)',
+"password": '#(password)'
+}</div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="17">
+                            <div class="step-ref bg-step">17</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given headers {Accept: 'application/json'}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="18">
+                            <div class="step-ref bg-step">18</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And url endpoint</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="19">
+                            <div class="step-ref bg-step">19</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And request request_body</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="20">
+                            <div class="step-ref bg-step">20</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method POST</div>
+                        </div>
+                        <div class="time-cell passed">1386</div>
+                    </div>
+                    <div class="preformatted" data-parent="20">14:55:52.321 request:
+1 &gt; POST https://hr-sit.noortecktraining.com/auth/sign-in
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 46
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: hr-sit.noortecktraining.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.21)
+{"username":"framework","password":"12345678"}
+
+14:55:53.228 response time in milliseconds: 901.15
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Aceess-Control-Allow-Headers: Content-Type, Authorization
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 226
+1 &lt; Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Cross-Origin-Embedder-Policy: require-corp
+1 &lt; Cross-Origin-Opener-Policy: same-origin
+1 &lt; Cross-Origin-Resource-Policy: same-origin
+1 &lt; Date: Thu, 28 Mar 2024 18:55:53 GMT
+1 &lt; ETag: W/"e2-3X5zV6KZHvJ5rPwoRJ2Wz5E6OcM"
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Server: openresty
+1 &lt; Strict-Transport-Security: [max-age=15552000; includeSubDomains, max-age=63072000; preload]
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Served-By: hr-sit.noortecktraining.com
+1 &lt; X-XSS-Protection: 0
+{"message":"Authentication successfull","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE4LCJ1c2VybmFtZSI6ImZyYW1ld29yayIsImlhdCI6MTcxMTY1MjE1MywiZXhwIjoxNzExNzM4NTUzfQ.Enndz0lBxlp2bRWNIQLBTs7wqqr8XISdAHIs5Q8ohg8"}</div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="21">
+                            <div class="step-ref bg-step">21</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* print response</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="21">14:55:53.232 [print] {
+  "message": "Authentication successfull",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE4LCJ1c2VybmFtZSI6ImZyYW1ld29yayIsImlhdCI6MTcxMTY1MjE1MywiZXhwIjoxNzExNzM4NTUzfQ.Enndz0lBxlp2bRWNIQLBTs7wqqr8XISdAHIs5Q8ohg8"
+}</div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="22">
+                            <div class="step-ref bg-step">22</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def token = 'Bearer ' + response.token</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="23">
+                            <div class="step-ref bg-step">23</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def setToken = getTokenData.token</div>
+                        </div>
+                        <div class="time-cell passed">21</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="24">
+                            <div class="step-ref bg-step">24</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* print setToken</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="24">14:55:53.262 [print] Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE4LCJ1c2VybmFtZSI6ImZyYW1ld29yayIsImlhdCI6MTcxMTY1MjE1MywiZXhwIjoxNzExNzM4NTUzfQ.Enndz0lBxlp2bRWNIQLBTs7wqqr8XISdAHIs5Q8ohg8</div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="25">
+                            <div class="step-ref bg-step">25</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def HEADER = {Content-Type: 'application/json', Accept: 'application/json', Authorization: '#(setToken)'}</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:30]bg">
+                        <div class="step-container" id="26">
+                            <div class="step-ref bg-step">26</div>
+                            <div class="step-cell passed">* configure headers = setHeader.HEADER</div>
+                        </div>
+                        <div class="time-cell passed">10</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="27">
+                            <div class="step-ref passed">27</div>
+                            <div class="step-cell passed">* def apiURI = hrServerData.Employee.GetAllManagers</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="28">
+                            <div class="step-ref passed">28</div>
+                            <div class="step-cell passed">* def endpoint = baseURL+apiURI</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="29">
+                            <div class="step-ref passed">29</div>
+                            <div class="step-cell passed">And url endpoint</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="30">
+                            <div class="step-ref passed">30</div>
+                            <div class="step-cell passed">When method GET</div>
+                        </div>
+                        <div class="time-cell passed">170</div>
+                    </div>
+                    <div class="preformatted" data-parent="30">14:55:53.287 request:
+1 &gt; GET https://hr-sit.noortecktraining.com/employee/managers
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE4LCJ1c2VybmFtZSI6ImZyYW1ld29yayIsImlhdCI6MTcxMTY1MjE1MywiZXhwIjoxNzExNzM4NTUzfQ.Enndz0lBxlp2bRWNIQLBTs7wqqr8XISdAHIs5Q8ohg8
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Type: application/json
+1 &gt; Host: hr-sit.noortecktraining.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.21)
+
+14:55:53.454 response time in milliseconds: 164.94
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Aceess-Control-Allow-Headers: Content-Type, Authorization
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Cross-Origin-Embedder-Policy: require-corp
+1 &lt; Cross-Origin-Opener-Policy: same-origin
+1 &lt; Cross-Origin-Resource-Policy: same-origin
+1 &lt; Date: Thu, 28 Mar 2024 18:55:53 GMT
+1 &lt; ETag: W/"4094-NvhOj8v3FmmhoP5RIcFhXacfO1U"
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Server: openresty
+1 &lt; Strict-Transport-Security: [max-age=15552000; includeSubDomains, max-age=63072000; preload]
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Served-By: hr-sit.noortecktraining.com
+1 &lt; X-XSS-Protection: 0
+{"managers":[{"employeeId":116,"firstName":"Shelli","lastName":"Baida","email":"SBAIDA","phoneNumber":"515.127.4563","employees":[{"employeeId":155,"firstName":"Cristin","lastName":"Miller","email":"cristin@test.com","phoneNumber":"(261) 817-9062"},{"employeeId":5305,"firstName":"John","lastName":"Doe","email":"example@example.com","phoneNumber":"12345"},{"employeeId":5306,"firstName":"John","lastName":"Doe","email":"example@example.com","phoneNumber":"12345"},{"employeeId":5307,"firstName":"John","lastName":"Doe","email":"example@example.com","phoneNumber":"12345"},{"employeeId":5308,"firstName":"John","lastName":"Doe","email":"example@example.com","phoneNumber":"12345"},{"employeeId":5309,"firstName":"John","lastName":"Doe","email":"example@example.com","phoneNumber":"12345"},{"employeeId":5310,"firstName":"John","lastName":"Doe","email":"example@example.com","phoneNumber":"12345"},{"employeeId":5311,"firstName":"John","lastName":"Doe","email":"example@example.com","phoneNumber":"12345"},{"employeeId":5312,"firstName":"John","lastName":"Doe","email":"example@example.com","phoneNumber":"12345"},{"employeeId":5351,"firstName":"Numbers","lastName":"Heller","email":"numbers@test.com","phoneNumber":"666.906.0183"}]},{"employeeId":118,"firstName":"Guy","lastName":"Himuro","email":"GHIMURO","phoneNumber":"515.127.4565","employees":[{"employeeId":4633,"firstName":"Alishan","lastName":"K","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"}]},{"employeeId":145,"firstName":"John","lastName":"Russell","email":"JRUSSEL","phoneNumber":"011.44.1344.429268","employees":[{"employeeId":150,"firstName":"John","lastName":"alwahab","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":151,"firstName":"David","lastName":"Bernstein","email":"DBERNSTE","phoneNumber":"011.44.1344.345268"},{"employeeId":152,"firstName":"Peter","lastName":"Hall","email":"PHALL","phoneNumber":"011.44.1344.478968"},{"employeeId":153,"firstName":"Christopher","lastName":"Olsen","email":"COLSEN","phoneNumber":"011.44.1344.498718"},{"employeeId":154,"firstName":"karzan ","lastName":"wria","email":"NCAMBRAU","phoneNumber":"21232233232"},{"employeeId":5269,"firstName":"Alishan","lastName":"K","email":"alishan@example.com","phoneNumber":"111-222-333"},{"employeeId":5272,"firstName":"Freshta","lastName":"Habibzay","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5276,"firstName":"John","lastName":"Doe","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5278,"firstName":"John","lastName":"Doe","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5280,"firstName":"Freshta-SIT","lastName":"Habibzay-SIT","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5283,"firstName":"Jackie","lastName":"Chapman","email":"jackie@example.com","phoneNumber":"555-111-2222"},{"employeeId":5284,"firstName":"B11_SIT","lastName":"Sit","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5315,"firstName":"Kit","lastName":"Kat","email":"kit-kat@gmail.com","phoneNumber":"&lt;132"},{"employeeId":5319,"firstName":"Friday-B11","lastName":"B11","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5320,"firstName":"Friday-B11","lastName":"B11","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5330,"firstName":"Friday-B11","lastName":"B11","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5348,"firstName":"Friday-B11","lastName":"B11","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"}]},{"employeeId":146,"firstName":"Karen","lastName":"Partners","email":"KPARTNER","phoneNumber":"011.44.1344.467268","employees":[{"employeeId":156,"firstName":"Janette","lastName":"King","email":"JKING","phoneNumber":"011.44.1345.429268"},{"employeeId":157,"firstName":"Patrick","lastName":"Sully","email":"PSULLY","phoneNumber":"011.44.1345.929268"},{"employeeId":158,"firstName":"Allan","lastName":"McEwen","email":"AMCEWEN","phoneNumber":"011.44.1345.829268"},{"employeeId":159,"firstName":"Lindsey","lastName":"Smith","email":"LSMITH","phoneNumber":"011.44.1345.729268"},{"employeeId":160,"firstName":"Lou","lastName":"Dora","email":"ldoran@example.com","phoneNumber":"&lt;5168999055&gt;"},{"employeeId":161,"firstName":"Sarath","lastName":"Sewall","email":"SSEWALL","phoneNumber":"011.44.1345.529268"},{"employeeId":5296,"firstName":"Power345","lastName":"Yes","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5300,"firstName":"Khwaja","lastName":"Sediqi","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5301,"firstName":"Khwaja","lastName":"Sediqi","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5321,"firstName":"Ahmed","lastName":"Ali","email":"ahmed@gmail.com","phoneNumber":"123-222-2525"},{"employeeId":5322,"firstName":"Alishan","lastName":"K","email":"alishan@gmail.com","phoneNumber":"222-222-2525"},{"employeeId":5323,"firstName":"Brian","lastName":"P","email":"brian@gmail.com","phoneNumber":"123-123-2525"},{"employeeId":5324,"firstName":"Alishan","lastName":"K","email":"alishan@gmail.com","phoneNumber":"222-222-2525"},{"employeeId":5325,"firstName":"Ahmed","lastName":"Ali","email":"ahmed@gmail.com","phoneNumber":"123-222-2525"},{"employeeId":5326,"firstName":"Alishan","lastName":"K","email":"alishan@gmail.com","phoneNumber":"222-222-2525"},{"employeeId":5327,"firstName":"Brian","lastName":"P","email":"brian@gmail.com","phoneNumber":"123-123-2525"},{"employeeId":5328,"firstName":"Alishan","lastName":"K","email":"alishan@gmail.com","phoneNumber":"222-222-2525"},{"employeeId":5329,"firstName":"JOhn","lastName":"Cena","email":"john@gmail.com","phoneNumber":"222-222-2222"},{"employeeId":5331,"firstName":"JOhn","lastName":"Cena","email":"john@gmail.com","phoneNumber":"222-222-2222"},{"employeeId":5332,"firstName":"Ahmed","lastName":"Ali","email":"ahmed@gmail.com","phoneNumber":"123-222-2525"},{"employeeId":5333,"firstName":"Alishan","lastName":"K","email":"alishan@gmail.com","phoneNumber":"222-222-2525"},{"employeeId":5334,"firstName":"Brian","lastName":"P","email":"brian@gmail.com","phoneNumber":"123-123-2525"},{"employeeId":5335,"firstName":"Alishan","lastName":"K","email":"alishan@gmail.com","phoneNumber":"222-222-2525"},{"employeeId":5336,"firstName":"Ahmed","lastName":"Ali","email":"ahmed@gmail.com","phoneNumber":"123-222-2525"},{"employeeId":5337,"firstName":"Alishan","lastName":"K","email":"alishan@gmail.com","phoneNumber":"222-222-2525"},{"employeeId":5338,"firstName":"Brian","lastName":"P","email":"brian@gmail.com","phoneNumber":"123-123-2525"},{"employeeId":5339,"firstName":"Alishan","lastName":"K","email":"alishan@gmail.com","phoneNumber":"222-222-2525"},{"employeeId":5340,"firstName":"Ahmed","lastName":"Ali","email":"ahmed@gmail.com","phoneNumber":"123-222-2525"},{"employeeId":5341,"firstName":"Alishan","lastName":"K","email":"alishan@gmail.com","phoneNumber":"222-222-2525"},{"employeeId":5342,"firstName":"Brian","lastName":"P","email":"brian@gmail.com","phoneNumber":"123-123-2525"},{"employeeId":5343,"firstName":"Alishan","lastName":"K","email":"alishan@gmail.com","phoneNumber":"222-222-2525"},{"employeeId":5344,"firstName":"Ahmed","lastName":"Ali","email":"ahmed@gmail.com","phoneNumber":"123-222-2525"},{"employeeId":5345,"firstName":"Alishan","lastName":"K","email":"alishan@gmail.com","phoneNumber":"222-222-2525"},{"employeeId":5346,"firstName":"Brian","lastName":"P","email":"brian@gmail.com","phoneNumber":"123-123-2525"},{"employeeId":5347,"firstName":"Alishan","lastName":"K","email":"alishan@gmail.com","phoneNumber":"222-222-2525"}]},{"employeeId":147,"firstName":"Alberto","lastName":"Errazuriz","email":"AERRAZUR","phoneNumber":"011.44.1344.429278","employees":[{"employeeId":162,"firstName":"Clara","lastName":"Vishney","email":"CVISHNEY","phoneNumber":"011.44.1346.129268"},{"employeeId":163,"firstName":"Danielle","lastName":"Greene","email":"DGREENE","phoneNumber":"011.44.1346.229268"},{"employeeId":164,"firstName":"Mattea","lastName":"Marvins","email":"MMARVINS","phoneNumber":"011.44.1346.329268"},{"employeeId":166,"firstName":"Sundar","lastName":"Ande","email":"SANDE","phoneNumber":"011.44.1346.629268"},{"employeeId":167,"firstName":"Amit","lastName":"Banda","email":"ABANDA","phoneNumber":"011.44.1346.729268"},{"employeeId":5273,"firstName":"EmilyDiaz","lastName":"D","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"}]},{"employeeId":148,"firstName":"Gerald","lastName":"Cambrault","email":"GCAMBRAU","phoneNumber":"011.44.1344.619268","employees":[{"employeeId":168,"firstName":"Lisa","lastName":"Ozer","email":"LOZER","phoneNumber":"011.44.1343.929268"},{"employeeId":169,"firstName":"Harrison","lastName":"Bloom","email":"HBLOOM","phoneNumber":"011.44.1343.829268"},{"employeeId":170,"firstName":"Tayler","lastName":"Fox","email":"TFOX","phoneNumber":"011.44.1343.729268"},{"employeeId":171,"firstName":"William","lastName":"Smith","email":"WSMITH","phoneNumber":"011.44.1343.629268"},{"employeeId":172,"firstName":"Elizabeth","lastName":"Bates","email":"EBATES","phoneNumber":"011.44.1343.529268"},{"employeeId":173,"firstName":"Sundita","lastName":"Kumar","email":"SKUMAR","phoneNumber":"011.44.1343.329268"},{"employeeId":5281,"firstName":"Wedi Haile","lastName":"Peter","email":"example@example.com","phoneNumber":"&lt;344-4564-3829&gt;"},{"employeeId":5287,"firstName":"Wedi Haile","lastName":"Peter","email":"example@example.com","phoneNumber":"344-4564-3829"},{"employeeId":5288,"firstName":"Friday-B11","lastName":"B11","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5313,"firstName":"Sabi","lastName":"Bin","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5314,"firstName":"Sabina","lastName":"Kad","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5316,"firstName":"Sabina","lastName":"Kad","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5318,"firstName":"Sabina","lastName":"Kad","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"}]},{"employeeId":149,"firstName":"Eleni","lastName":"Zlotkey","email":"EZLOTKEY","phoneNumber":"011.44.1344.429018","employees":[{"employeeId":174,"firstName":"Ellen","lastName":"Abel","email":"EABEL","phoneNumber":"011.44.1644.429267"},{"employeeId":175,"firstName":"Alyssa","lastName":"Hutton","email":"AHUTTON","phoneNumber":"011.44.1644.429266"},{"employeeId":176,"firstName":"Jonathon","lastName":"Taylor","email":"JTAYLOR","phoneNumber":"011.44.1644.429265"},{"employeeId":177,"firstName":"Jack","lastName":"Livingston","email":"JLIVINGS","phoneNumber":"011.44.1644.429264"},{"employeeId":178,"firstName":"Kimberely","lastName":"Grant","email":"KGRANT","phoneNumber":"011.44.1644.429263"},{"employeeId":179,"firstName":"Charles","lastName":"Johnson","email":"CJOHNSON","phoneNumber":"011.44.1644.429262"},{"employeeId":5270,"firstName":"JoeBabur","lastName":"Zikrullahababur","email":"example@example.com","phoneNumber":"7838-343-3223"},{"employeeId":5271,"firstName":"John_11","lastName":"Cena_11","email":"jc11@example.com","phoneNumber":"&lt;111-111-1111&gt;"},{"employeeId":5289,"firstName":"Tom","lastName":"Hanks","email":"thanks@gmail.com","phoneNumber":"123-222-2525"},{"employeeId":5290,"firstName":"Tom","lastName":"Hanks","email":"thanks@gmail.com","phoneNumber":"123-222-2525"},{"employeeId":5291,"firstName":"Tom","lastName":"Hanks","email":"thanks@gmail.com","phoneNumber":"123-222-2525"},{"employeeId":5302,"firstName":"Rockho","lastName":"golden","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5303,"firstName":"Rasco","lastName":"cat","email":"fake@notmyemail.com","phoneNumber":"&lt;18005174562&gt;"},{"employeeId":5304,"firstName":"Rasco-PM","lastName":"cat","email":"fake@notmyemail.com","phoneNumber":"&lt;18005174562&gt;"}]},{"employeeId":176,"firstName":"Jonathon","lastName":"Taylor","email":"JTAYLOR","phoneNumber":"011.44.1644.429265","employees":[{"employeeId":277,"firstName":"Gerry","lastName":"G","email":"gerry@example.com","phoneNumber":"333-333-3333"},{"employeeId":4643,"firstName":"John","lastName":"Doe Biden","email":"radio123@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":4885,"firstName":"John1","lastName":"Doe Biden","email":"radio123@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5275,"firstName":"John","lastName":"CenaMode","email":"sql@gmail.com","phoneNumber":"&lt;123456789&gt;"},{"employeeId":5277,"firstName":"Tom","lastName":"Bob","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5285,"firstName":"B11-SitEnv","lastName":"Sit","email":"sit@example.com","phoneNumber":"123-456-7897"},{"employeeId":5286,"firstName":"Cindy","lastName":"G","email":"cg@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5298,"firstName":"Vladimir","lastName":"Fleitas","email":"fleitas@example.com","phoneNumber":"&lt;555-555-5555&gt;"}]},{"employeeId":205,"firstName":"Shelley","lastName":"Higgins","email":"SHIGGINS","phoneNumber":"515.123.8080","employees":[{"employeeId":5274,"firstName":"Zarina","lastName":"Doe","email":"zozo@example.com","phoneNumber":"&lt;123-456-7890&gt;"},{"employeeId":5279,"firstName":"Jonny ","lastName":"Doe","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5292,"firstName":"John","lastName":"Doe","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5297,"firstName":"jose","lastName":"zoe","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5349,"firstName":"big","lastName":"boy","email":"big@boy.com","phoneNumber":"&lt;556661111"},{"employeeId":5352,"firstName":"Akbar","lastName":"Eqbal","email":"eqbal@example.com","phoneNumber":"143-222-2222"},{"employeeId":5354,"firstName":"Akbar","lastName":"Eqbal","email":"eqbal@example.com","phoneNumber":"143-222-2222"},{"employeeId":5355,"firstName":"Akbar-Postman","lastName":"Eqbal","email":"eqbal@example.com","phoneNumber":"143-222-2222"}]},{"employeeId":500,"firstName":"Karate","lastName":"API","email":"karate@example.com","phoneNumber":"&lt;phone_number&gt;","employees":[{"employeeId":4608,"firstName":"Seher","lastName":"Doe","email":"seher@example.com","phoneNumber":"&lt;12123&gt;"}]},{"employeeId":509,"firstName":"Karate","lastName":"API","email":"karate@example.com","phoneNumber":"&lt;phone_number&gt;","employees":[{"employeeId":4598,"firstName":"John","lastName":"Doe","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":4599,"firstName":"Freshta SDET","lastName":"Habibzay","email":"example123@example.com","phoneNumber":"837372920333"},{"employeeId":5282,"firstName":"Jane","lastName":"Doe","email":"jexample@example.com","phoneNumber":"&lt;555-222-4444&gt;"}]},{"employeeId":890,"firstName":"Mary","lastName":"Poppins","email":"m_p@example.com","phoneNumber":"&lt;8977896756&gt;","employees":[{"employeeId":4619,"firstName":"Miray","lastName":"Binali","email":"mirmir@gmail.com","phoneNumber":"2222222222"},{"employeeId":4620,"firstName":"Miray","lastName":"Binali","email":"mirmir@gmail.com","phoneNumber":"2222222222"},{"employeeId":4621,"firstName":"Miray","lastName":"Binali","email":"mirmir@gmail.com","phoneNumber":"2222222222"},{"employeeId":4623,"firstName":"Mir","lastName":"Bin","email":"mirmir@gmail.com","phoneNumber":"4342222222"},{"employeeId":4624,"firstName":"Mir","lastName":"Bin","email":"mirmir@gmail.com","phoneNumber":"4342222222"},{"employeeId":5268,"firstName":"Gusto","lastName":"Cruz","email":"gusto@example.com","phoneNumber":"346-555-5555"},{"employeeId":5293,"firstName":"Noor","lastName":"Zazai","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5294,"firstName":"Noor","lastName":"Zazai","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5295,"firstName":"Noor","lastName":"Zazai","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"}]},{"employeeId":1002,"firstName":"TestNG","lastName":"Framework","email":"sql@gmail.com","phoneNumber":"123456789","employees":[{"employeeId":1549,"firstName":"Latif","lastName":"Sediqi","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"},{"employeeId":5299,"firstName":"John","lastName":"Doe","email":"example@example.com","phoneNumber":"&lt;phone_number&gt;"}]},{"employeeId":1009,"firstName":"JAVA","lastName":"OOP","email":"sql@gmail.com","phoneNumber":"123456789","employees":[{"employeeId":4091,"firstName":"Lucia","lastName":"D","email":"lucika@example.com","phoneNumber":"333-2234-233&gt;"}]}]}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="31">
+                            <div class="step-ref passed">31</div>
+                            <div class="step-cell passed">* print response</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="preformatted" data-parent="31">14:55:53.460 [print] {
+  "managers": [
+    {
+      "firstName": "Shelli",
+      "lastName": "Baida",
+      "phoneNumber": "515.127.4563",
+      "employeeId": 116,
+      "employees": [
+        {
+          "firstName": "Cristin",
+          "lastName": "Miller",
+          "phoneNumber": "(261) 817-9062",
+          "employeeId": 155,
+          "email": "cristin@test.com"
+        },
+        {
+          "firstName": "John",
+          "lastName": "Doe",
+          "phoneNumber": "12345",
+          "employeeId": 5305,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "John",
+          "lastName": "Doe",
+          "phoneNumber": "12345",
+          "employeeId": 5306,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "John",
+          "lastName": "Doe",
+          "phoneNumber": "12345",
+          "employeeId": 5307,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "John",
+          "lastName": "Doe",
+          "phoneNumber": "12345",
+          "employeeId": 5308,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "John",
+          "lastName": "Doe",
+          "phoneNumber": "12345",
+          "employeeId": 5309,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "John",
+          "lastName": "Doe",
+          "phoneNumber": "12345",
+          "employeeId": 5310,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "John",
+          "lastName": "Doe",
+          "phoneNumber": "12345",
+          "employeeId": 5311,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "John",
+          "lastName": "Doe",
+          "phoneNumber": "12345",
+          "employeeId": 5312,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Numbers",
+          "lastName": "Heller",
+          "phoneNumber": "666.906.0183",
+          "employeeId": 5351,
+          "email": "numbers@test.com"
+        }
+      ],
+      "email": "SBAIDA"
+    },
+    {
+      "firstName": "Guy",
+      "lastName": "Himuro",
+      "phoneNumber": "515.127.4565",
+      "employeeId": 118,
+      "employees": [
+        {
+          "firstName": "Alishan",
+          "lastName": "K",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 4633,
+          "email": "example@example.com"
+        }
+      ],
+      "email": "GHIMURO"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Russell",
+      "phoneNumber": "011.44.1344.429268",
+      "employeeId": 145,
+      "employees": [
+        {
+          "firstName": "John",
+          "lastName": "alwahab",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 150,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "David",
+          "lastName": "Bernstein",
+          "phoneNumber": "011.44.1344.345268",
+          "employeeId": 151,
+          "email": "DBERNSTE"
+        },
+        {
+          "firstName": "Peter",
+          "lastName": "Hall",
+          "phoneNumber": "011.44.1344.478968",
+          "employeeId": 152,
+          "email": "PHALL"
+        },
+        {
+          "firstName": "Christopher",
+          "lastName": "Olsen",
+          "phoneNumber": "011.44.1344.498718",
+          "employeeId": 153,
+          "email": "COLSEN"
+        },
+        {
+          "firstName": "karzan ",
+          "lastName": "wria",
+          "phoneNumber": "21232233232",
+          "employeeId": 154,
+          "email": "NCAMBRAU"
+        },
+        {
+          "firstName": "Alishan",
+          "lastName": "K",
+          "phoneNumber": "111-222-333",
+          "employeeId": 5269,
+          "email": "alishan@example.com"
+        },
+        {
+          "firstName": "Freshta",
+          "lastName": "Habibzay",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5272,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "John",
+          "lastName": "Doe",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5276,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "John",
+          "lastName": "Doe",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5278,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Freshta-SIT",
+          "lastName": "Habibzay-SIT",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5280,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Jackie",
+          "lastName": "Chapman",
+          "phoneNumber": "555-111-2222",
+          "employeeId": 5283,
+          "email": "jackie@example.com"
+        },
+        {
+          "firstName": "B11_SIT",
+          "lastName": "Sit",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5284,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Kit",
+          "lastName": "Kat",
+          "phoneNumber": "&lt;132",
+          "employeeId": 5315,
+          "email": "kit-kat@gmail.com"
+        },
+        {
+          "firstName": "Friday-B11",
+          "lastName": "B11",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5319,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Friday-B11",
+          "lastName": "B11",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5320,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Friday-B11",
+          "lastName": "B11",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5330,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Friday-B11",
+          "lastName": "B11",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5348,
+          "email": "example@example.com"
+        }
+      ],
+      "email": "JRUSSEL"
+    },
+    {
+      "firstName": "Karen",
+      "lastName": "Partners",
+      "phoneNumber": "011.44.1344.467268",
+      "employeeId": 146,
+      "employees": [
+        {
+          "firstName": "Janette",
+          "lastName": "King",
+          "phoneNumber": "011.44.1345.429268",
+          "employeeId": 156,
+          "email": "JKING"
+        },
+        {
+          "firstName": "Patrick",
+          "lastName": "Sully",
+          "phoneNumber": "011.44.1345.929268",
+          "employeeId": 157,
+          "email": "PSULLY"
+        },
+        {
+          "firstName": "Allan",
+          "lastName": "McEwen",
+          "phoneNumber": "011.44.1345.829268",
+          "employeeId": 158,
+          "email": "AMCEWEN"
+        },
+        {
+          "firstName": "Lindsey",
+          "lastName": "Smith",
+          "phoneNumber": "011.44.1345.729268",
+          "employeeId": 159,
+          "email": "LSMITH"
+        },
+        {
+          "firstName": "Lou",
+          "lastName": "Dora",
+          "phoneNumber": "&lt;5168999055&gt;",
+          "employeeId": 160,
+          "email": "ldoran@example.com"
+        },
+        {
+          "firstName": "Sarath",
+          "lastName": "Sewall",
+          "phoneNumber": "011.44.1345.529268",
+          "employeeId": 161,
+          "email": "SSEWALL"
+        },
+        {
+          "firstName": "Power345",
+          "lastName": "Yes",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5296,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Khwaja",
+          "lastName": "Sediqi",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5300,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Khwaja",
+          "lastName": "Sediqi",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5301,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Ahmed",
+          "lastName": "Ali",
+          "phoneNumber": "123-222-2525",
+          "employeeId": 5321,
+          "email": "ahmed@gmail.com"
+        },
+        {
+          "firstName": "Alishan",
+          "lastName": "K",
+          "phoneNumber": "222-222-2525",
+          "employeeId": 5322,
+          "email": "alishan@gmail.com"
+        },
+        {
+          "firstName": "Brian",
+          "lastName": "P",
+          "phoneNumber": "123-123-2525",
+          "employeeId": 5323,
+          "email": "brian@gmail.com"
+        },
+        {
+          "firstName": "Alishan",
+          "lastName": "K",
+          "phoneNumber": "222-222-2525",
+          "employeeId": 5324,
+          "email": "alishan@gmail.com"
+        },
+        {
+          "firstName": "Ahmed",
+          "lastName": "Ali",
+          "phoneNumber": "123-222-2525",
+          "employeeId": 5325,
+          "email": "ahmed@gmail.com"
+        },
+        {
+          "firstName": "Alishan",
+          "lastName": "K",
+          "phoneNumber": "222-222-2525",
+          "employeeId": 5326,
+          "email": "alishan@gmail.com"
+        },
+        {
+          "firstName": "Brian",
+          "lastName": "P",
+          "phoneNumber": "123-123-2525",
+          "employeeId": 5327,
+          "email": "brian@gmail.com"
+        },
+        {
+          "firstName": "Alishan",
+          "lastName": "K",
+          "phoneNumber": "222-222-2525",
+          "employeeId": 5328,
+          "email": "alishan@gmail.com"
+        },
+        {
+          "firstName": "JOhn",
+          "lastName": "Cena",
+          "phoneNumber": "222-222-2222",
+          "employeeId": 5329,
+          "email": "john@gmail.com"
+        },
+        {
+          "firstName": "JOhn",
+          "lastName": "Cena",
+          "phoneNumber": "222-222-2222",
+          "employeeId": 5331,
+          "email": "john@gmail.com"
+        },
+        {
+          "firstName": "Ahmed",
+          "lastName": "Ali",
+          "phoneNumber": "123-222-2525",
+          "employeeId": 5332,
+          "email": "ahmed@gmail.com"
+        },
+        {
+          "firstName": "Alishan",
+          "lastName": "K",
+          "phoneNumber": "222-222-2525",
+          "employeeId": 5333,
+          "email": "alishan@gmail.com"
+        },
+        {
+          "firstName": "Brian",
+          "lastName": "P",
+          "phoneNumber": "123-123-2525",
+          "employeeId": 5334,
+          "email": "brian@gmail.com"
+        },
+        {
+          "firstName": "Alishan",
+          "lastName": "K",
+          "phoneNumber": "222-222-2525",
+          "employeeId": 5335,
+          "email": "alishan@gmail.com"
+        },
+        {
+          "firstName": "Ahmed",
+          "lastName": "Ali",
+          "phoneNumber": "123-222-2525",
+          "employeeId": 5336,
+          "email": "ahmed@gmail.com"
+        },
+        {
+          "firstName": "Alishan",
+          "lastName": "K",
+          "phoneNumber": "222-222-2525",
+          "employeeId": 5337,
+          "email": "alishan@gmail.com"
+        },
+        {
+          "firstName": "Brian",
+          "lastName": "P",
+          "phoneNumber": "123-123-2525",
+          "employeeId": 5338,
+          "email": "brian@gmail.com"
+        },
+        {
+          "firstName": "Alishan",
+          "lastName": "K",
+          "phoneNumber": "222-222-2525",
+          "employeeId": 5339,
+          "email": "alishan@gmail.com"
+        },
+        {
+          "firstName": "Ahmed",
+          "lastName": "Ali",
+          "phoneNumber": "123-222-2525",
+          "employeeId": 5340,
+          "email": "ahmed@gmail.com"
+        },
+        {
+          "firstName": "Alishan",
+          "lastName": "K",
+          "phoneNumber": "222-222-2525",
+          "employeeId": 5341,
+          "email": "alishan@gmail.com"
+        },
+        {
+          "firstName": "Brian",
+          "lastName": "P",
+          "phoneNumber": "123-123-2525",
+          "employeeId": 5342,
+          "email": "brian@gmail.com"
+        },
+        {
+          "firstName": "Alishan",
+          "lastName": "K",
+          "phoneNumber": "222-222-2525",
+          "employeeId": 5343,
+          "email": "alishan@gmail.com"
+        },
+        {
+          "firstName": "Ahmed",
+          "lastName": "Ali",
+          "phoneNumber": "123-222-2525",
+          "employeeId": 5344,
+          "email": "ahmed@gmail.com"
+        },
+        {
+          "firstName": "Alishan",
+          "lastName": "K",
+          "phoneNumber": "222-222-2525",
+          "employeeId": 5345,
+          "email": "alishan@gmail.com"
+        },
+        {
+          "firstName": "Brian",
+          "lastName": "P",
+          "phoneNumber": "123-123-2525",
+          "employeeId": 5346,
+          "email": "brian@gmail.com"
+        },
+        {
+          "firstName": "Alishan",
+          "lastName": "K",
+          "phoneNumber": "222-222-2525",
+          "employeeId": 5347,
+          "email": "alishan@gmail.com"
+        }
+      ],
+      "email": "KPARTNER"
+    },
+    {
+      "firstName": "Alberto",
+      "lastName": "Errazuriz",
+      "phoneNumber": "011.44.1344.429278",
+      "employeeId": 147,
+      "employees": [
+        {
+          "firstName": "Clara",
+          "lastName": "Vishney",
+          "phoneNumber": "011.44.1346.129268",
+          "employeeId": 162,
+          "email": "CVISHNEY"
+        },
+        {
+          "firstName": "Danielle",
+          "lastName": "Greene",
+          "phoneNumber": "011.44.1346.229268",
+          "employeeId": 163,
+          "email": "DGREENE"
+        },
+        {
+          "firstName": "Mattea",
+          "lastName": "Marvins",
+          "phoneNumber": "011.44.1346.329268",
+          "employeeId": 164,
+          "email": "MMARVINS"
+        },
+        {
+          "firstName": "Sundar",
+          "lastName": "Ande",
+          "phoneNumber": "011.44.1346.629268",
+          "employeeId": 166,
+          "email": "SANDE"
+        },
+        {
+          "firstName": "Amit",
+          "lastName": "Banda",
+          "phoneNumber": "011.44.1346.729268",
+          "employeeId": 167,
+          "email": "ABANDA"
+        },
+        {
+          "firstName": "EmilyDiaz",
+          "lastName": "D",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5273,
+          "email": "example@example.com"
+        }
+      ],
+      "email": "AERRAZUR"
+    },
+    {
+      "firstName": "Gerald",
+      "lastName": "Cambrault",
+      "phoneNumber": "011.44.1344.619268",
+      "employeeId": 148,
+      "employees": [
+        {
+          "firstName": "Lisa",
+          "lastName": "Ozer",
+          "phoneNumber": "011.44.1343.929268",
+          "employeeId": 168,
+          "email": "LOZER"
+        },
+        {
+          "firstName": "Harrison",
+          "lastName": "Bloom",
+          "phoneNumber": "011.44.1343.829268",
+          "employeeId": 169,
+          "email": "HBLOOM"
+        },
+        {
+          "firstName": "Tayler",
+          "lastName": "Fox",
+          "phoneNumber": "011.44.1343.729268",
+          "employeeId": 170,
+          "email": "TFOX"
+        },
+        {
+          "firstName": "William",
+          "lastName": "Smith",
+          "phoneNumber": "011.44.1343.629268",
+          "employeeId": 171,
+          "email": "WSMITH"
+        },
+        {
+          "firstName": "Elizabeth",
+          "lastName": "Bates",
+          "phoneNumber": "011.44.1343.529268",
+          "employeeId": 172,
+          "email": "EBATES"
+        },
+        {
+          "firstName": "Sundita",
+          "lastName": "Kumar",
+          "phoneNumber": "011.44.1343.329268",
+          "employeeId": 173,
+          "email": "SKUMAR"
+        },
+        {
+          "firstName": "Wedi Haile",
+          "lastName": "Peter",
+          "phoneNumber": "&lt;344-4564-3829&gt;",
+          "employeeId": 5281,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Wedi Haile",
+          "lastName": "Peter",
+          "phoneNumber": "344-4564-3829",
+          "employeeId": 5287,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Friday-B11",
+          "lastName": "B11",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5288,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Sabi",
+          "lastName": "Bin",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5313,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Sabina",
+          "lastName": "Kad",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5314,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Sabina",
+          "lastName": "Kad",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5316,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Sabina",
+          "lastName": "Kad",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5318,
+          "email": "example@example.com"
+        }
+      ],
+      "email": "GCAMBRAU"
+    },
+    {
+      "firstName": "Eleni",
+      "lastName": "Zlotkey",
+      "phoneNumber": "011.44.1344.429018",
+      "employeeId": 149,
+      "employees": [
+        {
+          "firstName": "Ellen",
+          "lastName": "Abel",
+          "phoneNumber": "011.44.1644.429267",
+          "employeeId": 174,
+          "email": "EABEL"
+        },
+        {
+          "firstName": "Alyssa",
+          "lastName": "Hutton",
+          "phoneNumber": "011.44.1644.429266",
+          "employeeId": 175,
+          "email": "AHUTTON"
+        },
+        {
+          "firstName": "Jonathon",
+          "lastName": "Taylor",
+          "phoneNumber": "011.44.1644.429265",
+          "employeeId": 176,
+          "email": "JTAYLOR"
+        },
+        {
+          "firstName": "Jack",
+          "lastName": "Livingston",
+          "phoneNumber": "011.44.1644.429264",
+          "employeeId": 177,
+          "email": "JLIVINGS"
+        },
+        {
+          "firstName": "Kimberely",
+          "lastName": "Grant",
+          "phoneNumber": "011.44.1644.429263",
+          "employeeId": 178,
+          "email": "KGRANT"
+        },
+        {
+          "firstName": "Charles",
+          "lastName": "Johnson",
+          "phoneNumber": "011.44.1644.429262",
+          "employeeId": 179,
+          "email": "CJOHNSON"
+        },
+        {
+          "firstName": "JoeBabur",
+          "lastName": "Zikrullahababur",
+          "phoneNumber": "7838-343-3223",
+          "employeeId": 5270,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "John_11",
+          "lastName": "Cena_11",
+          "phoneNumber": "&lt;111-111-1111&gt;",
+          "employeeId": 5271,
+          "email": "jc11@example.com"
+        },
+        {
+          "firstName": "Tom",
+          "lastName": "Hanks",
+          "phoneNumber": "123-222-2525",
+          "employeeId": 5289,
+          "email": "thanks@gmail.com"
+        },
+        {
+          "firstName": "Tom",
+          "lastName": "Hanks",
+          "phoneNumber": "123-222-2525",
+          "employeeId": 5290,
+          "email": "thanks@gmail.com"
+        },
+        {
+          "firstName": "Tom",
+          "lastName": "Hanks",
+          "phoneNumber": "123-222-2525",
+          "employeeId": 5291,
+          "email": "thanks@gmail.com"
+        },
+        {
+          "firstName": "Rockho",
+          "lastName": "golden",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5302,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Rasco",
+          "lastName": "cat",
+          "phoneNumber": "&lt;18005174562&gt;",
+          "employeeId": 5303,
+          "email": "fake@notmyemail.com"
+        },
+        {
+          "firstName": "Rasco-PM",
+          "lastName": "cat",
+          "phoneNumber": "&lt;18005174562&gt;",
+          "employeeId": 5304,
+          "email": "fake@notmyemail.com"
+        }
+      ],
+      "email": "EZLOTKEY"
+    },
+    {
+      "firstName": "Jonathon",
+      "lastName": "Taylor",
+      "phoneNumber": "011.44.1644.429265",
+      "employeeId": 176,
+      "employees": [
+        {
+          "firstName": "Gerry",
+          "lastName": "G",
+          "phoneNumber": "333-333-3333",
+          "employeeId": 277,
+          "email": "gerry@example.com"
+        },
+        {
+          "firstName": "John",
+          "lastName": "Doe Biden",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 4643,
+          "email": "radio123@example.com"
+        },
+        {
+          "firstName": "John1",
+          "lastName": "Doe Biden",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 4885,
+          "email": "radio123@example.com"
+        },
+        {
+          "firstName": "John",
+          "lastName": "CenaMode",
+          "phoneNumber": "&lt;123456789&gt;",
+          "employeeId": 5275,
+          "email": "sql@gmail.com"
+        },
+        {
+          "firstName": "Tom",
+          "lastName": "Bob",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5277,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "B11-SitEnv",
+          "lastName": "Sit",
+          "phoneNumber": "123-456-7897",
+          "employeeId": 5285,
+          "email": "sit@example.com"
+        },
+        {
+          "firstName": "Cindy",
+          "lastName": "G",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5286,
+          "email": "cg@example.com"
+        },
+        {
+          "firstName": "Vladimir",
+          "lastName": "Fleitas",
+          "phoneNumber": "&lt;555-555-5555&gt;",
+          "employeeId": 5298,
+          "email": "fleitas@example.com"
+        }
+      ],
+      "email": "JTAYLOR"
+    },
+    {
+      "firstName": "Shelley",
+      "lastName": "Higgins",
+      "phoneNumber": "515.123.8080",
+      "employeeId": 205,
+      "employees": [
+        {
+          "firstName": "Zarina",
+          "lastName": "Doe",
+          "phoneNumber": "&lt;123-456-7890&gt;",
+          "employeeId": 5274,
+          "email": "zozo@example.com"
+        },
+        {
+          "firstName": "Jonny ",
+          "lastName": "Doe",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5279,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "John",
+          "lastName": "Doe",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5292,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "jose",
+          "lastName": "zoe",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5297,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "big",
+          "lastName": "boy",
+          "phoneNumber": "&lt;556661111",
+          "employeeId": 5349,
+          "email": "big@boy.com"
+        },
+        {
+          "firstName": "Akbar",
+          "lastName": "Eqbal",
+          "phoneNumber": "143-222-2222",
+          "employeeId": 5352,
+          "email": "eqbal@example.com"
+        },
+        {
+          "firstName": "Akbar",
+          "lastName": "Eqbal",
+          "phoneNumber": "143-222-2222",
+          "employeeId": 5354,
+          "email": "eqbal@example.com"
+        },
+        {
+          "firstName": "Akbar-Postman",
+          "lastName": "Eqbal",
+          "phoneNumber": "143-222-2222",
+          "employeeId": 5355,
+          "email": "eqbal@example.com"
+        }
+      ],
+      "email": "SHIGGINS"
+    },
+    {
+      "firstName": "Karate",
+      "lastName": "API",
+      "phoneNumber": "&lt;phone_number&gt;",
+      "employeeId": 500,
+      "employees": [
+        {
+          "firstName": "Seher",
+          "lastName": "Doe",
+          "phoneNumber": "&lt;12123&gt;",
+          "employeeId": 4608,
+          "email": "seher@example.com"
+        }
+      ],
+      "email": "karate@example.com"
+    },
+    {
+      "firstName": "Karate",
+      "lastName": "API",
+      "phoneNumber": "&lt;phone_number&gt;",
+      "employeeId": 509,
+      "employees": [
+        {
+          "firstName": "John",
+          "lastName": "Doe",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 4598,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Freshta SDET",
+          "lastName": "Habibzay",
+          "phoneNumber": "837372920333",
+          "employeeId": 4599,
+          "email": "example123@example.com"
+        },
+        {
+          "firstName": "Jane",
+          "lastName": "Doe",
+          "phoneNumber": "&lt;555-222-4444&gt;",
+          "employeeId": 5282,
+          "email": "jexample@example.com"
+        }
+      ],
+      "email": "karate@example.com"
+    },
+    {
+      "firstName": "Mary",
+      "lastName": "Poppins",
+      "phoneNumber": "&lt;8977896756&gt;",
+      "employeeId": 890,
+      "employees": [
+        {
+          "firstName": "Miray",
+          "lastName": "Binali",
+          "phoneNumber": "2222222222",
+          "employeeId": 4619,
+          "email": "mirmir@gmail.com"
+        },
+        {
+          "firstName": "Miray",
+          "lastName": "Binali",
+          "phoneNumber": "2222222222",
+          "employeeId": 4620,
+          "email": "mirmir@gmail.com"
+        },
+        {
+          "firstName": "Miray",
+          "lastName": "Binali",
+          "phoneNumber": "2222222222",
+          "employeeId": 4621,
+          "email": "mirmir@gmail.com"
+        },
+        {
+          "firstName": "Mir",
+          "lastName": "Bin",
+          "phoneNumber": "4342222222",
+          "employeeId": 4623,
+          "email": "mirmir@gmail.com"
+        },
+        {
+          "firstName": "Mir",
+          "lastName": "Bin",
+          "phoneNumber": "4342222222",
+          "employeeId": 4624,
+          "email": "mirmir@gmail.com"
+        },
+        {
+          "firstName": "Gusto",
+          "lastName": "Cruz",
+          "phoneNumber": "346-555-5555",
+          "employeeId": 5268,
+          "email": "gusto@example.com"
+        },
+        {
+          "firstName": "Noor",
+          "lastName": "Zazai",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5293,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Noor",
+          "lastName": "Zazai",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5294,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "Noor",
+          "lastName": "Zazai",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5295,
+          "email": "example@example.com"
+        }
+      ],
+      "email": "m_p@example.com"
+    },
+    {
+      "firstName": "TestNG",
+      "lastName": "Framework",
+      "phoneNumber": "123456789",
+      "employeeId": 1002,
+      "employees": [
+        {
+          "firstName": "Latif",
+          "lastName": "Sediqi",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 1549,
+          "email": "example@example.com"
+        },
+        {
+          "firstName": "John",
+          "lastName": "Doe",
+          "phoneNumber": "&lt;phone_number&gt;",
+          "employeeId": 5299,
+          "email": "example@example.com"
+        }
+      ],
+      "email": "sql@gmail.com"
+    },
+    {
+      "firstName": "JAVA",
+      "lastName": "OOP",
+      "phoneNumber": "123456789",
+      "employeeId": 1009,
+      "employees": [
+        {
+          "firstName": "Lucia",
+          "lastName": "D",
+          "phoneNumber": "333-2234-233&gt;",
+          "employeeId": 4091,
+          "email": "lucika@example.com"
+        }
+      ],
+      "email": "sql@gmail.com"
+    }
+  ]
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="32">
+                            <div class="step-ref passed">32</div>
+                            <div class="step-cell passed">* print response.managers[0]</div>
+                        </div>
+                        <div class="time-cell passed">13</div>
+                    </div>
+                    <div class="preformatted" data-parent="32">14:55:53.473 [print] {
+  "firstName": "Shelli",
+  "lastName": "Baida",
+  "phoneNumber": "515.127.4563",
+  "employeeId": 116,
+  "employees": [
+    {
+      "firstName": "Cristin",
+      "lastName": "Miller",
+      "phoneNumber": "(261) 817-9062",
+      "employeeId": 155,
+      "email": "cristin@test.com"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "12345",
+      "employeeId": 5305,
+      "email": "example@example.com"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "12345",
+      "employeeId": 5306,
+      "email": "example@example.com"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "12345",
+      "employeeId": 5307,
+      "email": "example@example.com"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "12345",
+      "employeeId": 5308,
+      "email": "example@example.com"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "12345",
+      "employeeId": 5309,
+      "email": "example@example.com"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "12345",
+      "employeeId": 5310,
+      "email": "example@example.com"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "12345",
+      "employeeId": 5311,
+      "email": "example@example.com"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "12345",
+      "employeeId": 5312,
+      "email": "example@example.com"
+    },
+    {
+      "firstName": "Numbers",
+      "lastName": "Heller",
+      "phoneNumber": "666.906.0183",
+      "employeeId": 5351,
+      "email": "numbers@test.com"
+    }
+  ],
+  "email": "SBAIDA"
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="33">
+                            <div class="step-ref passed">33</div>
+                            <div class="step-cell passed">* print response.managers[0].employees</div>
+                        </div>
+                        <div class="time-cell passed">15</div>
+                    </div>
+                    <div class="preformatted" data-parent="33">14:55:53.488 [print] [
+  {
+    "firstName": "Cristin",
+    "lastName": "Miller",
+    "phoneNumber": "(261) 817-9062",
+    "employeeId": 155,
+    "email": "cristin@test.com"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "phoneNumber": "12345",
+    "employeeId": 5305,
+    "email": "example@example.com"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "phoneNumber": "12345",
+    "employeeId": 5306,
+    "email": "example@example.com"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "phoneNumber": "12345",
+    "employeeId": 5307,
+    "email": "example@example.com"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "phoneNumber": "12345",
+    "employeeId": 5308,
+    "email": "example@example.com"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "phoneNumber": "12345",
+    "employeeId": 5309,
+    "email": "example@example.com"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "phoneNumber": "12345",
+    "employeeId": 5310,
+    "email": "example@example.com"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "phoneNumber": "12345",
+    "employeeId": 5311,
+    "email": "example@example.com"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "phoneNumber": "12345",
+    "employeeId": 5312,
+    "email": "example@example.com"
+  },
+  {
+    "firstName": "Numbers",
+    "lastName": "Heller",
+    "phoneNumber": "666.906.0183",
+    "employeeId": 5351,
+    "email": "numbers@test.com"
+  }
+]</div>
+                    <div class="step-row">
+                        <div class="step-container" id="34">
+                            <div class="step-ref passed">34</div>
+                            <div class="step-cell passed">* def employeeFirstNames = []</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="35">
+                            <div class="step-ref passed">35</div>
+                            <div class="step-cell passed">* print employeeFirstNames</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="35">14:55:53.490 [print] [
+]</div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

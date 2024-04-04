@@ -1,0 +1,18 @@
+{
+	"scrum": [
+		{
+			"jobId": "firefighter",
+			"maxSalary": 98037,
+			"jobTitle": "Internet",
+			"minSalary": 2832
+		}
+	],
+	"sit": [
+		{
+			"jobId": "economist",
+			"maxSalary": 71981,
+			"jobTitle": "Research",
+			"minSalary": 4415
+		}
+	]
+}

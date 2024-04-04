@@ -1,0 +1,31 @@
+{
+	"scrum": [
+		{
+			"firstName": "Nilsa",
+			"lastName": "Stamm",
+			"jobId": "IT_PROG",
+			"hireDate": "01/01/2000",
+			"comissionPct": 0.15,
+			"phoneNumber": "869-515-9105",
+			"departmentId": 10,
+			"employeeId": 107,
+			"managerId": 114,
+			"salary": 139972.26,
+			"email": "Nilsa@test.com"
+		}
+	],
+	"sit": [
+		{
+			"firstName": "sit frameworkdata",
+			"lastName": "api",
+			"jobId": "AD_VP",
+			"hireDate": "01/01/1970",
+			"comissionPct": 0.1,
+			"phoneNumber": "<phone_number>",
+			"departmentId": 10,
+			"managerId": 140,
+			"salary": 3000,
+			"email": "example@example.com"
+		}
+	]
+}
